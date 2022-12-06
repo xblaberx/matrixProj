@@ -81,32 +81,32 @@ namespace Matrix_Fel
             return false;
         }
 
-        private void MySort_Switch(ref int i, ref int j, ref int k)
+        private void MySort_Switch(ref int i, ref int j, ref int z, ref int k)
         {
-            double temp = s[i, k];
-            s[i, k] = s[i, j];
-            s[i, j] = temp;
+            double temp = s[i, j];
+            s[i, j] = s[z, k];
+            s[z, k] = temp;
         }
 
         public void MySort(bool asc)
         {
             for (int i = 0; i < inputY; i++)
-                for (int j = 0; j < inputX - 1; j++)
-                    for (int k = j + 1; k < inputX; k++)
-                    {
-                        if (asc)
+                for (int j = 0; j < inputX; j++)
+                    for (int z = i; z < inputY; z++)
+                        for (int k = (i == z) ? j : 0; k < inputX; k++)
                         {
-                            if (s[i, k] > s[i, j])
+                            if (asc)
                             {
-                                MySort_Switch(ref i, ref j, ref k);
+                                if (s[i, j] < s[z, k])
+                                {
+                                    MySort_Switch(ref i, ref j, ref z, ref k);
+                                }
+                            }
+                            else if (s[i, j] > s[z, k])
+                            {
+                                MySort_Switch(ref i, ref j, ref z, ref k);
                             }
                         }
-                        else if (s[i, k] < s[i, j])
-                        {
-                            MySort_Switch(ref i, ref j, ref k);
-                        }
-                    }
-
         }
 
         public void WriteOut()
