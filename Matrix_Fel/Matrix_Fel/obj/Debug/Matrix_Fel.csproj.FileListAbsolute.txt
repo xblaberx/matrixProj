@@ -1,0 +1,7 @@
+C:\Users\labodi.attila\Desktop\Matrix_Fel\Matrix_Fel\bin\Debug\Matrix_Fel.exe.config
+C:\Users\labodi.attila\Desktop\Matrix_Fel\Matrix_Fel\bin\Debug\Matrix_Fel.exe
+C:\Users\labodi.attila\Desktop\Matrix_Fel\Matrix_Fel\bin\Debug\Matrix_Fel.pdb
+C:\Users\labodi.attila\Desktop\Matrix_Fel\Matrix_Fel\obj\Debug\Matrix_Fel.csproj.AssemblyReference.cache
+C:\Users\labodi.attila\Desktop\Matrix_Fel\Matrix_Fel\obj\Debug\Matrix_Fel.csproj.CoreCompileInputs.cache
+C:\Users\labodi.attila\Desktop\Matrix_Fel\Matrix_Fel\obj\Debug\Matrix_Fel.exe
+C:\Users\labodi.attila\Desktop\Matrix_Fel\Matrix_Fel\obj\Debug\Matrix_Fel.pdb
